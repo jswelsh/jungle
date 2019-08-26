@@ -41,7 +41,8 @@
           </ul>
         </li>
         <% if current_user %>
-          <li><p class="loggedin"> <%= current_user.name %></p></li>    
+        
+          <li><a href="#"><%= current_user.name %></a></li>    
           <li><%= link_to "Logout", '/logout' %></li>    
         <% else %>
           <li><%= link_to "Login", '/login' %></li>

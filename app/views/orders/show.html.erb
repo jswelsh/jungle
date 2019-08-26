@@ -6,7 +6,7 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order, <b><%= @order.email %></b>!</h4>
+    <h4>Thank you for your order, <b><%= current_user.email %></b>!</h4>
     <div class="panel panel-default order">
       <table class="table table-hover">
         <thead>
